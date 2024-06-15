@@ -39,7 +39,7 @@ module my_class;
     
   endclass
   
-  task transmit (Transaction t); //object 作為引數
+    task transmit (Transaction t); //object 作為引數: handle
     // CBbus.rx_data <= t.data;
     t.stats.startT = $time;
     $display("addr=%0d",t.addr);
