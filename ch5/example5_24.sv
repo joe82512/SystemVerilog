@@ -44,7 +44,7 @@ module my_class;
     t.addr = 42;
   endfunction
     
-  task transmit (Transaction t); //object
+  task transmit (Transaction t); //handle
     // CBbus.rx_data <= t.data;
     t.stats.startT = $time;
     $display("addr=%0d",t.addr);
