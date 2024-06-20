@@ -50,7 +50,7 @@ program automatic test;
     // $display(bad.bad_crc); // bad_crc is not in base object
     
     //ex8.14
-    if(!$cast(bad2,tr)) begin
+    if(!$cast(bad2,tr)) begin // try: bad2 = tr;
       $display("cannot assign tr to bad2");
     end
     else begin
